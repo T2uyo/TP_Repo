@@ -48,8 +48,6 @@ print(len(interne), "interne,", len(externe), "externe")
 
 #ex39
 class ImageFinder(HTMLParser):
-    """Parser HTML care colectează atributul src al tag-urilor <img>."""
-
     def __init__(self):
         super().__init__()
         self.images = []
@@ -86,7 +84,7 @@ finder.feed(pagina.text)
 print(len(finder.images), "imagini găsite")
 for src in finder.images:
     print(src)
-print(pagina.text.lower().count("<img"))  # comparație cu numărul de tag-uri <img>
+print(pagina.text.lower().count("<img"))
 time.sleep(1)
 
 #ex40
