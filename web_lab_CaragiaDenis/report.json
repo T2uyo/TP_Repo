@@ -3,7 +3,7 @@
   "status_code": 200,
   "final_url": "https://cybercor.org/",
   "title": "CYBERCOR",
-  "ip": "172.67.211.96",
+  "ip": "104.21.91.71",
   "redirects": [
     "301 -> https://cybercor.org/"
   ],
