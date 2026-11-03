@@ -1,6 +1,6 @@
 import re
 import sys
-
+from collections import Counter
 TIPAR = re.compile(r"Failed password for (?:invalid user )?(\S+) from (\S+) port")
 
 #A1
@@ -26,7 +26,6 @@ def citeste_esecuri(cale):
     return esecuri
 
 #A3
-from collections import Counter
 def pe_ip(esecuri):
     return Counter(e["ip"] for e in esecuri)
 
